@@ -245,6 +245,11 @@ int main(int argc, char **argv){
 	cout << "Skipped test video " << tfc << " frames ahead" << endl;
 	cout << "Skipped source video " << sfc << " frames ahead" << endl;
 
+	// make avarages
+	double avgpsnr = sumpsnr / loops;
+	double avgrmse = sumrmse / loops;
+	//double nrmlrmse = 
+	
 	for(;;){
 		captReference >> frameReference;
 		captTest >> frameTest;
@@ -309,10 +314,6 @@ int main(int argc, char **argv){
 		}
 	}
 
-	// make avarages
-	double avgpsnr = sumpsnr / loops;
-	double avgrmse = sumrmse / loops;
-	//double nrmlrmse = 
 
 	// finish up the output
 	fprintf(outputfile, templateFooter, frameNum, avgpsnr, avgrmse);
