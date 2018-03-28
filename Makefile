@@ -3,7 +3,7 @@ LDFLAGS=$(shell pkg-config --libs opencv)
 BINDIR=bin
 SRCDIR=src
 DESTDIR=
-PREFIX=/usr/local
+PREFIX=/usr
 
 all: ssimCheck
 
