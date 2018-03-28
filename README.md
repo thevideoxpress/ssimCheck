@@ -12,7 +12,7 @@ ssimCheck binary is now in ./bin
 ```
 make install PREFIX=/usr/local
 ```
-ssimCheck binary is now in /usr/local/bin
+ssimCheck binary is now in /local/bin
 
 ## Usage:
 ```
